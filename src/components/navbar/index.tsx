@@ -3,7 +3,7 @@ import { MdMenu, MdClose } from "react-icons/md";
 import { DownloadIcon } from "../icons/Download";
 import { useState } from "react";
 import { AnimatePresence, LayoutGroup, motion } from "framer-motion";
-import clsx from "clsx";
+import Link from "next/link";
 
 export const Navbar = () => {
   return (
@@ -54,7 +54,11 @@ const MobileNavbar = () => {
               >
                 <Button icon={<DownloadIcon />}>Resume</Button>
                 <ul className="mt-8 font-bold leading-10 text-white">
-                  <li>About Me</li>
+                  <li>
+                    <Link href="#about" scroll={false} onClick={toggleMenu}>
+                      About Me
+                    </Link>
+                  </li>
                   <li>Projects</li>
                   <li>Contact Me</li>
                 </ul>
@@ -88,8 +92,16 @@ const DesktopNavbar = () => {
     <nav className="sticky top-0 z-10 hidden items-center justify-between border-b border-b-gray-100 bg-white/80 px-16 py-12 font-montserrat backdrop-blur-md md:flex lg:px-32">
       <h1 className="text-3xl font-bold">mysliwiec.</h1>
       <ul className="flex items-center gap-8 font-bold lg:gap-16">
-        <li>About Me</li>
-        <li>Projects</li>
+        <li>
+          <Link href="#about" scroll={false}>
+            About Me
+          </Link>
+        </li>
+        <li>
+          <Link href="#about" scroll={false}>
+            About Me
+          </Link>
+        </li>
         <li>Contact Me</li>
         <li>
           <Button icon={<DownloadIcon />}>Resume</Button>
