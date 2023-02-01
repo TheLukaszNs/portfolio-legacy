@@ -97,11 +97,7 @@ const DesktopNavbar = () => {
             About Me
           </Link>
         </li>
-        <li>
-          <Link href="#about" scroll={false}>
-            About Me
-          </Link>
-        </li>
+        <li>Projects</li>
         <li>Contact Me</li>
         <li>
           <Button icon={<DownloadIcon />}>Resume</Button>
