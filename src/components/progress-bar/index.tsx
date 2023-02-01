@@ -22,7 +22,8 @@ export const ProgressBar = ({ className = "", children, progress }: Props) => {
           width: isInView ? `${progress * 100}%` : 0,
         }}
         transition={{
-          duration: 0.725,
+          duration: 1.25,
+          delay: 0.25,
         }}
       >
         <span className="absolute block self-center whitespace-nowrap font-bold text-white">
