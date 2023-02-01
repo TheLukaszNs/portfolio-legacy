@@ -2,6 +2,7 @@ import { type NextPage } from "next";
 import Head from "next/head";
 import { AccentedText } from "../components/accented-text";
 import { Navbar } from "../components/navbar";
+import { About } from "../sections/about";
 
 const Home: NextPage = () => {
   return (
@@ -22,6 +23,8 @@ const Home: NextPage = () => {
           </span>
         </div>
       </section>
+
+      <About />
     </>
   );
 };
