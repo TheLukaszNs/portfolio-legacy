@@ -8,6 +8,7 @@ module.exports = {
       },
       fontFamily: {
         montserrat: ["var(--font-montserrat)", "sans-serif"],
+        spaceMono: ["var(--font-space-mono)", "monospace"],
       },
     },
   },
