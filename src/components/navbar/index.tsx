@@ -54,7 +54,11 @@ const MobileNavbar = () => {
               >
                 <Button icon={<DownloadIcon />}>Resume</Button>
                 <ul className="mt-8 font-bold leading-10 text-white">
-                  <li>About Me</li>
+                  <li>
+                    <Link href="#about" scroll={false} onClick={toggleMenu}>
+                      About Me
+                    </Link>
+                  </li>
                   <li>Projects</li>
                   <li>Contact Me</li>
                 </ul>
