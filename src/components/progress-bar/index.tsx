@@ -9,7 +9,7 @@ type Props = {
 
 export const ProgressBar = ({ className = "", children, progress }: Props) => {
   const ref = useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref);
+  const isInView = useInView(ref, { once: true });
 
   return (
     <div

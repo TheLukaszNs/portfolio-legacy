@@ -9,6 +9,8 @@
     "start": "next start"
   },
   "dependencies": {
+    "@mdi/js": "^7.1.96",
+    "@mdi/react": "^1.6.1",
     "@next/font": "^13.1.6",
     "clsx": "^1.2.1",
     "framer-motion": "^8.5.5",
