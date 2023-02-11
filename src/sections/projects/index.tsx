@@ -76,7 +76,11 @@ export const Projects = () => {
   const y = useTransform(scrollYProgress, [0, 1], [200, 30]);
 
   return (
-    <Section id="projects" className="relative gap-8 overflow-hidden md:gap-16">
+    <Section
+      id="projects"
+      className="relative gap-8 overflow-hidden md:gap-16"
+      fullHeight
+    >
       {projects.map((project, index) => (
         <Card key={index} {...project} />
       ))}

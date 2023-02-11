@@ -15,18 +15,27 @@ export const Hero = () => {
         </span>
         <div className="hidden flex-row gap-8 md:flex">
           <SocialButton
+            as="a"
+            href="https://github.com/TheLukaszNs"
+            target="_blank"
             icon={<Icon path={mdiGithub} size={1} />}
             className="font-sans"
           >
             GitHub
           </SocialButton>
           <SocialButton
+            as="a"
+            href="https://www.linkedin.com/in/lukasz-mysliwiec"
+            target="_blank"
             icon={<Icon path={mdiLinkedin} size={1} />}
             className="font-sans"
           >
             LinkedIn
           </SocialButton>
           <SocialButton
+            as="a"
+            href="https://www.instagram.com/thelukaszns2/"
+            target="_blank"
             icon={<Icon path={mdiInstagram} size={1} />}
             className="font-sans"
           >

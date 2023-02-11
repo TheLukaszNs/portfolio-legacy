@@ -59,7 +59,11 @@ const MobileNavbar = () => {
                       About Me
                     </Link>
                   </li>
-                  <li>Projects</li>
+                  <li>
+                    <Link href="#projects" scroll={false} onClick={toggleMenu}>
+                      Projects
+                    </Link>
+                  </li>
                   <li>Contact Me</li>
                 </ul>
               </motion.div>
@@ -97,7 +101,11 @@ const DesktopNavbar = () => {
             About Me
           </Link>
         </li>
-        <li>Projects</li>
+        <li>
+          <Link href="#projects" scroll={false}>
+            Projects
+          </Link>
+        </li>
         <li>Contact Me</li>
         <li>
           <Button icon={<DownloadIcon />}>Resume</Button>
