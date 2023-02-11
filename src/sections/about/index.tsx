@@ -67,12 +67,9 @@ export const About = () => {
         tRPC (with T3 stack)
       </ProgressBar>
 
-      <span className="absolute left-32 top-8 -z-20 break-words font-spaceMono text-[20vmin] font-bold leading-none text-gray-200 md:top-auto md:left-auto md:right-16 md:bottom-1/2 md:translate-y-1/2 md:translate-x-1/2 md:rotate-90 md:break-normal md:text-[15vmin]">
+      <span className="absolute inset-y-0 right-0 -z-20 hidden text-center font-spaceMono text-[15vmin] font-bold leading-none text-gray-200 [text-orientation:_mixed] [writing-mode:_vertical-rl] md:inline-block">
         AB0UT_ME
       </span>
-      <motion.span className="absolute bottom-8 -left-32 -z-20 break-words font-spaceMono text-[20vmin] font-bold leading-none text-gray-200 md:hidden">
-        AB0UT_ME
-      </motion.span>
     </Section>
   );
 };
